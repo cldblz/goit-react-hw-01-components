@@ -5,7 +5,7 @@ import StatisticsList from 'components/StatisticsList/StatisticsList';
 const Statistics = ({ stats, title }) => {
     return (
         <StatisticsContainer>
-            <Title >{title}</Title>
+            {title && (<Title >{title}</Title>)}
             <StatisticsList stats={stats}/>
         </StatisticsContainer>
     )
